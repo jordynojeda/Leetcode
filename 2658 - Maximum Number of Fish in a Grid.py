@@ -6,7 +6,7 @@ class Solution:
                 r == ROWS or c == COLS or
                 grid[r][c] == 0 or (r, c) in visit
             ):
-            return 0
+                return 0
         
             visit.add((r,c))
             result = grid[r][c]
@@ -24,3 +24,4 @@ class Solution:
                 result = max(result, dfs(r, c))
 
         return result
+
